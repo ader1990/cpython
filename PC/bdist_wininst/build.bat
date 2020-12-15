@@ -17,3 +17,7 @@ if errorlevel 1 goto :eof
 echo Building Lib\distutils\command\wininst-xx.0-amd64.exe
 
 %MSBUILD% "%D%bdist_wininst.vcxproj" "/p:SolutionDir=%PCBUILD%\" /p:Configuration=Release /p:Platform=x64
+
+echo Building Lib\distutils\command\wininst-xx.0-arm64.exe
+
+%MSBUILD% "%D%bdist_wininst.vcxproj" "/p:SolutionDir=%PCBUILD%\" /p:Configuration=Release /p:Platform=arm64
